@@ -9,10 +9,10 @@ namespace SecuringApps.Data
 {
     public class ApplicationUser : IdentityUser
     {
-        [Required]
+        //[Required]
         public String Name { get; set; }
 
-        [Required]
+        //[Required]
         public String Surname { get; set; }
 
         public bool isTeacher { get; set; }

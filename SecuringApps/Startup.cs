@@ -30,19 +30,29 @@ namespace SecuringApps
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            ////
+            ////ApplicationUser
             services.AddDefaultIdentity<ApplicationUser>(options => {
                 options.SignIn.RequireConfirmedAccount = true;
                 options.Password.RequiredLength = 6;
                 options.Lockout.DefaultLockoutTimeSpan = new TimeSpan(0, 00, 30);
              })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            //RequireConfirmedAccount
             services.Configure<IdentityOptions>(
                 options =>
                 {
                     options.SignIn.RequireConfirmedAccount = true;
                 });
+            //Google
+            services.AddAuthentication()
+            .AddGoogle(options =>
+            {
+                IConfigurationSection googleAuthNSection =
+                    Configuration.GetSection("Authentication:Google");
+
+                options.ClientId = googleAuthNSection["ClientId"];
+                options.ClientSecret = googleAuthNSection["ClientSecret"];
+            });
             ////
             services.AddControllersWithViews();
             services.AddRazorPages();
