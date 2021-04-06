@@ -23,4 +23,8 @@
     <ProjectReference Include="..\ShoppingCart.IOC\ShoppingCart.IOC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
 </Project>

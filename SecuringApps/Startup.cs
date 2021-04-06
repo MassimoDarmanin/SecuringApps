@@ -30,13 +30,18 @@ namespace SecuringApps
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            ////ApplicationUser
-            services.AddDefaultIdentity<ApplicationUser>(options => {
+            ////Add Indentity
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultUI()
+                .AddDefaultTokenProviders();
+            //ApplicationUser
+            /*services.AddDefaultIdentity<ApplicationUser>(options => {
                 options.SignIn.RequireConfirmedAccount = true;
                 options.Password.RequiredLength = 6;
                 options.Lockout.DefaultLockoutTimeSpan = new TimeSpan(0, 00, 30);
              })
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>();*/
             //RequireConfirmedAccount
             services.Configure<IdentityOptions>(
                 options =>

@@ -85,8 +85,26 @@ namespace SecuringApps.Areas.Identity.Pages.Account
             //HERE we are going to check whether email obtained from the info.Principal.Claims.ToList()[4] value
             //check with db whether:
             //1. Email exists
-            //2. email has teacher role assigned 
-            //redirect to login back if 1 || 2 false
+            string email = info.Principal.Claims.ToList()[4].Value;
+            var currentlyLoggingUser = await _userManager.FindByEmailAsync(email);
+            if(currentlyLoggingUser == null)
+            {
+                ErrorMessage = "Email not registered.";
+                return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
+            }
+            else //email exists
+            {
+                //confirm role
+                //2. email has teacher role assigned 
+                //redirect to login back if 1 || 2 false
+                bool isTeacher = await _userManager.IsInRoleAsync(currentlyLoggingUser, "TEACHER");
+                if (!isTeacher)
+                {
+                    ErrorMessage = "User not assigned as 'Teacher'.";
+                    return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
+                }
+            }
+
 
             // Sign in the user with this external login provider if the user already has a login.
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor : true);
