@@ -42,12 +42,22 @@ namespace SecuringApps
                 options.Lockout.DefaultLockoutTimeSpan = new TimeSpan(0, 00, 30);
              })
                 .AddEntityFrameworkStores<ApplicationDbContext>();*/
+
             //RequireConfirmedAccount
             services.Configure<IdentityOptions>(
                 options =>
                 {
                     options.SignIn.RequireConfirmedAccount = true;
                 });
+            //Password Setting
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequiredLength = 6;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit = false;
+            });
             //Google
             services.AddAuthentication()
             .AddGoogle(options =>

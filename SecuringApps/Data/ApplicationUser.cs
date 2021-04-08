@@ -15,6 +15,6 @@ namespace SecuringApps.Data
         //[Required]
         public String Surname { get; set; }
 
-        public bool isTeacher { get; set; }
+        //public bool isTeacher { get; set; }
     }
 }

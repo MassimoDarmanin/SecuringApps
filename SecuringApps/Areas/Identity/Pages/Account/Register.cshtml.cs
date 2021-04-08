@@ -17,7 +17,7 @@ using SecuringApps.Data;
 
 namespace SecuringApps.Areas.Identity.Pages.Account
 {
-    [AllowAnonymous]
+    [Authorize(Roles = "Teacher")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -51,7 +51,7 @@ namespace SecuringApps.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
+            /*[Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
@@ -60,7 +60,7 @@ namespace SecuringApps.Areas.Identity.Pages.Account
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-            public string ConfirmPassword { get; set; }
+            public string ConfirmPassword { get; set; }*/
 
             //
             [Required]
@@ -71,9 +71,9 @@ namespace SecuringApps.Areas.Identity.Pages.Account
             [Display(Name = "Last name")]
             public string Surname { get; set; }
 
-            [Required]
+            /*[Required]
             [Display(Name = "Teacher Rights")]
-            public bool isTeacher { get; set; }
+            public bool isTeacher { get; set; }*/
             //
         }
 
@@ -83,6 +83,19 @@ namespace SecuringApps.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
+        public string RandomString(int size)
+        {
+            StringBuilder builder = new StringBuilder();
+            Random random = new Random();
+            char ch;
+            for (int i = 0; i < size; i++)
+            {
+                ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
+                builder.Append(ch);
+            }
+            return builder.ToString();
+        }
+
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl = returnUrl ?? Url.Content("~/");
@@ -90,9 +103,12 @@ namespace SecuringApps.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 //
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, isTeacher = Input.isTeacher, Name = Input.Name, Surname = Input.Surname };
+
+                string randpw = RandomString(9);
+                //var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, isTeacher = Input.isTeacher, Name = Input.Name, Surname = Input.Surname };                
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, Name = Input.Name, Surname = Input.Surname };
                 //
-                var result = await _userManager.CreateAsync(user, Input.Password);
+                var result = await _userManager.CreateAsync(user, randpw);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");

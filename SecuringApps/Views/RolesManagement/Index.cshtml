@@ -1,27 +1,47 @@
-﻿
+﻿@model SecuringApps.Models.RolesManagementModel
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
 
-<table>
-    <thead>
+<form method="post" action="/RolesManagement/AllocateRoles">
+    <table>
+        <thead>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
         <tr>
-            <th>
-
-            </th>
-            <th>
-
-            </th>
+            <td>Roles:</td>
+            <td>
+                <select name="role"> <!--Sends String role to RolesManagement Controller-->
+                    @foreach (var role in Model.Roles)
+                    {
+                        <option value="@role.Name">@role.Name</option>
+                    }
+                </select>
+            </td>
         </tr>
-    </thead>
-    <tr>
-        <td>Roles:</td>
-        <td>
-            <select>
+        <tr>
+            <td>Choose User:</td>
+            <td>
+                <select name="user"><!--Sends String user to RolesManagement Controller-->
+                    @foreach (var user in Model.Users)
+                    {
+                        var details = user.Name + " " + user.Surname + " " + user.Email;
+                        <option value="@user.UserName">@details</option>
+                    }
+                </select>
+            </td>
+        </tr>
+    </table>
 
-            </select>
-        </td>
-    </tr>
-</table>
+    <input type="submit" value="Allocate" name="btnName"/>&nbsp;<input type="submit" value="Deallocate" name="btnName"/>
+
+</form>
