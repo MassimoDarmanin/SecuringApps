@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using SecuringApps.Data;
+using MailKit.Net.Smtp;
+using MimeKit;
 
 namespace SecuringApps.Areas.Identity.Pages.Account
 {
@@ -111,6 +113,38 @@ namespace SecuringApps.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user, randpw);
                 if (result.Succeeded)
                 {
+                    ////send email
+                    MimeMessage message = new MimeMessage();
+
+                    //from
+                    MailboxAddress from = new MailboxAddress("Admin","massimodarmanin@gmail.com");
+                    message.From.Add(from);
+                    //to           
+                    MailboxAddress to = new MailboxAddress(user.Name,user.Email);
+                    message.To.Add(to);
+                    //subject
+                    message.Subject = "Student Account";
+
+                    //body
+                    BodyBuilder bodyBuilder = new BodyBuilder();
+                    bodyBuilder.HtmlBody = "<h1>Your password is: " + randpw +"</h1>";
+                    bodyBuilder.TextBody = "Your password is: " + randpw;
+
+                    message.Body = bodyBuilder.ToMessageBody();
+
+                    //connect
+                    SmtpClient client = new SmtpClient();
+                    client.Connect("smtp.gmail.com", 465, true);
+                    client.Authenticate("massimodarmanin@gmail.com", "Water4All!");
+
+                    //send
+                    client.Send(message);
+                    client.Disconnect(true);
+                    client.Dispose();
+
+
+                    ////
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
