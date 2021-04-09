@@ -141,8 +141,6 @@ namespace SecuringApps.Areas.Identity.Pages.Account
                     client.Send(message);
                     client.Disconnect(true);
                     client.Dispose();
-
-
                     ////
 
                     _logger.LogInformation("User created a new account with password.");
