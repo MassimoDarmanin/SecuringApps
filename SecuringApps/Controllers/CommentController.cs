@@ -10,22 +10,21 @@ using System.Threading.Tasks;
 namespace SecuringApps.Controllers
 {
     [Authorize]
-    public class TaskController : Controller
+    public class CommentController : Controller
     {
         private readonly SecuringAppDbContext _db;
 
-        public TaskController(SecuringAppDbContext db)
+        public CommentController(SecuringAppDbContext db)
         {
             _db = db;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(Guid id)
         {
-            IEnumerable<TaskModel> taskList = _db.Tasks;
-            return View(taskList);
+            IEnumerable<CommentModel> cmtList = _db.Comments.Where(c => c.FileId == id);
+            return View(cmtList);
         }
 
-        [Authorize(Roles = "Teacher")]
         //GET-Create
         public IActionResult Create()
         {
@@ -35,16 +34,16 @@ namespace SecuringApps.Controllers
         //Post-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(TaskModel task)
+        public IActionResult Create(CommentModel cmt)
         {
             if (ModelState.IsValid)
             {
-                _db.Tasks.Add(task);
+                _db.Comments.Add(cmt);
                 _db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
-            return View(task);            
+            return View(cmt);
         }
     }
 }

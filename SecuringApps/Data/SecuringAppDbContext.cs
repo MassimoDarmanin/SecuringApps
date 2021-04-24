@@ -15,5 +15,16 @@ namespace SecuringApps.Data
         }
 
         public DbSet<TaskModel> Tasks { get; set; }
+        public DbSet<FileModel> Files { get; set; }
+        public DbSet<CommentModel> Comments { get; set; }
+
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<FileModel>(entity =>
+            {
+                entity.Property(x => x.DateUploaded).HasColumnType("datetime");
+            });
+            OnModelCreatingPartial(modelBuilder);
+        }*/
     }
 }
