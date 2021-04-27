@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SecuringApps.Data;
 using SecuringApps.Models;
@@ -13,10 +14,12 @@ namespace SecuringApps.Controllers
     public class TaskController : Controller
     {
         private readonly SecuringAppDbContext _db;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public TaskController(SecuringAppDbContext db)
+        public TaskController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager)
         {
             _db = db;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -37,9 +40,12 @@ namespace SecuringApps.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(TaskModel task)
         {
+            string userId = _userManager.GetUserId(User);
+
             if (ModelState.IsValid)
             {
                 _db.Tasks.Add(task);
+                task.UserId = Guid.Parse(userId);
                 _db.SaveChanges();
 
                 return RedirectToAction("Index");

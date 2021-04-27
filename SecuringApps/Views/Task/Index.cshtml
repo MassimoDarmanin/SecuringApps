@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Index - Tasks</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -37,7 +37,8 @@
                 @Html.DisplayFor(modelItem => item.Deadline)
             </td>
             <td>
-                <a asp-controller="File" asp-action="Index" asp-route-id="@item.Id">Upload/View Files</a>
+                <a asp-controller="File" asp-action="Index" asp-route-id="@SecuringApps.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())">Upload/View Files</a> |
+                @Html.ActionLink("Index","File", new{ id = SecuringApps.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())})
             </td>
         </tr>
 }

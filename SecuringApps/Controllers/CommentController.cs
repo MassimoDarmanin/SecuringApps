@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SecuringApps.Data;
 using SecuringApps.Models;
@@ -13,10 +14,12 @@ namespace SecuringApps.Controllers
     public class CommentController : Controller
     {
         private readonly SecuringAppDbContext _db;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public CommentController(SecuringAppDbContext db)
+        public CommentController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager)
         {
             _db = db;
+            _userManager = userManager;
         }
 
         public IActionResult Index(Guid id)
