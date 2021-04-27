@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace SecuringApps.Utility
 {
@@ -99,22 +100,26 @@ namespace SecuringApps.Utility
             //3. convert to string
             string cipher = Convert.ToBase64String(cipherAsBytes);
 
-            cipher = cipher.Replace('%','P');
-            cipher = cipher.Replace('/', 'S');
-            cipher = cipher.Replace('+', 'X');
-            cipher = cipher.Replace('-', 'M');
-            cipher = cipher.Replace('=', 'E');
+            //string encodedCipher = HttpUtility.UrlDecode(cipher);
+
+            cipher = cipher.Replace('%','@');
+            cipher = cipher.Replace('/', '#');
+            cipher = cipher.Replace('+', '$');
+            cipher = cipher.Replace('-', '(');
+            cipher = cipher.Replace('=', ')');
 
             return cipher;
         }
 
         public static string SymmetricDecrypt(string cipher)
         {
-            cipher = cipher.Replace('P', '%');
-            cipher = cipher.Replace('S', '/');
-            cipher = cipher.Replace('X', '+');
-            cipher = cipher.Replace('M', '-');
-            cipher = cipher.Replace('E', '=');
+            cipher = cipher.Replace('@', '%');
+            cipher = cipher.Replace('#', '/');
+            cipher = cipher.Replace('$', '+');
+            cipher = cipher.Replace('(', '-');
+            cipher = cipher.Replace(')', '=');
+            
+            //string decodedCipher = HttpUtility.UrlDecode(cipher);
 
             //1. Convert input by user
             byte[] cipherDataAsBytes = Convert.FromBase64String(cipher);
