@@ -37,8 +37,8 @@
                 @Html.DisplayFor(modelItem => item.Deadline)
             </td>
             <td>
-                <a asp-controller="File" asp-action="Index" asp-route-id="@SecuringApps.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())">Encrypted Query Link</a>
-                <a asp-controller="File" asp-action="Index" asp-route-id="@item.Id">Upload/View Files</a>
+                <a asp-controller="File" asp-action="Index" asp-route-id="@SecuringApps.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())">Upload/View Files</a>
+                <!--<a asp-controller="File" asp-action="Index" asp-route-id="@item.Id">Upload/View Files</a>-->
             </td>
         </tr>
 }
