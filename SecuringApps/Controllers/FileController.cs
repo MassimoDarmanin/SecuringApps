@@ -27,7 +27,11 @@ namespace SecuringApps.Controllers
             _userManager = userManager;
         }
 
-        //public IActionResult Index(Guid id)
+        /*public IActionResult Index(Guid id)
+        {
+            IEnumerable<FileModel> fileList = _db.Files.Where(f => f.TaskId == id);
+            return View(fileList);
+        }*/
         public IActionResult Index(string id)
         {
             string idDecrypted = Encryption.SymmetricDecrypt(id);

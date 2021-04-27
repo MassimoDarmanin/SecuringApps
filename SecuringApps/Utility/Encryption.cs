@@ -12,7 +12,7 @@ namespace SecuringApps.Utility
     {
         static byte[] salt = new byte[]
         {
-            20,4,34,56,250,1,65,105,2,180,101,9,10,200, 5, 7
+            20,4,34,56,250,1,65,105,2//,180,101,9,10,200, 5, 7
         };
 
         static string password = "P@S$W0RD";
@@ -91,7 +91,7 @@ namespace SecuringApps.Utility
         public static string SymmetricEncrypt(string clearData)
         {
             //1. Convert input by user
-            byte[] clearDataAsBytes = Encoding.UTF32.GetBytes(clearData);
+            byte[] clearDataAsBytes = Encoding.UTF8.GetBytes(clearData);
 
             //2. encrypt
             byte[] cipherAsBytes = SymmetricEncrypt(clearDataAsBytes);
@@ -99,11 +99,23 @@ namespace SecuringApps.Utility
             //3. convert to string
             string cipher = Convert.ToBase64String(cipherAsBytes);
 
+            cipher = cipher.Replace('%','P');
+            cipher = cipher.Replace('/', 'S');
+            cipher = cipher.Replace('+', 'X');
+            cipher = cipher.Replace('-', 'M');
+            cipher = cipher.Replace('=', 'E');
+
             return cipher;
         }
 
         public static string SymmetricDecrypt(string cipher)
         {
+            cipher = cipher.Replace('P', '%');
+            cipher = cipher.Replace('S', '/');
+            cipher = cipher.Replace('X', '+');
+            cipher = cipher.Replace('M', '-');
+            cipher = cipher.Replace('E', '=');
+
             //1. Convert input by user
             byte[] cipherDataAsBytes = Convert.FromBase64String(cipher);
 
@@ -111,7 +123,7 @@ namespace SecuringApps.Utility
             byte[] clearDataAsBytes = SymmetricDecrypt(cipherDataAsBytes);
 
             //3. convert to string
-            string originalText = Encoding.UTF32.GetString(clearDataAsBytes);
+            string originalText = Encoding.UTF8.GetString(clearDataAsBytes);
 
             return originalText;
         }
