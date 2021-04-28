@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using SecuringApps.Data;
 using SecuringApps.Models;
 using SecuringApps.Utility;
@@ -19,12 +20,14 @@ namespace SecuringApps.Controllers
         private readonly SecuringAppDbContext _db;
         private readonly IWebHostEnvironment _hostEnvironment;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ILogger<FileController> _logger;
 
-        public FileController(SecuringAppDbContext db, IWebHostEnvironment hostEnvironment, UserManager<ApplicationUser> userManager)
+        public FileController(SecuringAppDbContext db, IWebHostEnvironment hostEnvironment, UserManager<ApplicationUser> userManager, ILogger<FileController> logger)
         {
             _db = db;
             this._hostEnvironment = hostEnvironment;
             _userManager = userManager;
+            _logger = logger;
         }
 
         /*public IActionResult Index(Guid id)

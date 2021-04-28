@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using SecuringApps.Data;
 using SecuringApps.Models;
 using System;
@@ -15,11 +16,13 @@ namespace SecuringApps.Controllers
     {
         private readonly SecuringAppDbContext _db;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ILogger<CommentController> _logger;
 
-        public CommentController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager)
+        public CommentController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager, ILogger<CommentController> logger)
         {
             _db = db;
             _userManager = userManager;
+            _logger = logger;
         }
 
         public IActionResult Index(Guid id)
