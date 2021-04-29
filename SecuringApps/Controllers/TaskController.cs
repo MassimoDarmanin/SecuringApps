@@ -50,16 +50,23 @@ namespace SecuringApps.Controllers
         public IActionResult Create(TaskModel task)
         {
             string userId = _userManager.GetUserId(User);
-
-            if (ModelState.IsValid)
+            try
             {
-                _db.Tasks.Add(task);
-                task.UserId = Guid.Parse(userId);
-                _db.SaveChanges();
+                if (ModelState.IsValid)
+                {
+                    _db.Tasks.Add(task);
+                    task.UserId = Guid.Parse(userId);
+                    _db.SaveChanges();
 
-                return RedirectToAction("Index");
+                    return RedirectToAction("Index");
+                }
+                return View(task); 
             }
-            return View(task);            
+            catch (Exception ex)
+            {
+                return View("Error", new ErrorViewModel() { Message = "Error while saving File." });
+            }
+                       
         }
     }
 }

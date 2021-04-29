@@ -95,7 +95,7 @@ namespace SecuringApps.Controllers
                     //insert record
                     _db.Files.Add(files);
                     files.UserId = Guid.Parse(userId);
-                    files.TaskId = id;
+                    //files.TaskId = id;
                     await _db.SaveChangesAsync();
 
                     //return RedirectToAction("Index");
