@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using SecuringApps.Data;
 using SecuringApps.Models;
 using System;
@@ -15,15 +16,23 @@ namespace SecuringApps.Controllers
     {
         private readonly SecuringAppDbContext _db;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ILogger<TaskController> _logger;
 
-        public TaskController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager)
+        public TaskController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager, ILogger<TaskController> logger)
         {
             _db = db;
             _userManager = userManager;
+            _logger = logger;
         }
+
+        public string Message { get; set; }
 
         public IActionResult Index()
         {
+            string userName = _userManager.GetUserName(User);
+            Message = "User: " + userName + $"\nTask Index visited at {DateTime.UtcNow.ToLongTimeString()}";
+            _logger.LogInformation(Message);
+
             IEnumerable<TaskModel> taskList = _db.Tasks;
             return View(taskList);
         }

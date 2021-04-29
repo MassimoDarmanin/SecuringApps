@@ -1,8 +1,6 @@
 ﻿@model SecuringApps.Models.FileModel
 
-@{
-    ViewData["Title"] = "Create";
-}
+@{ ViewData["Title"] = "Create"; }
 
 <h1>Create</h1>
 
@@ -11,6 +9,8 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="FileName" class="control-label"></label>
@@ -49,7 +49,7 @@
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div> -->
             <div class="form-group">
-                @Html.AntiForgeryToken() <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -59,3 +59,6 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

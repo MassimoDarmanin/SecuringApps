@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SecuringApps.ActionFilters;
 using SecuringApps.Data;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace SecuringApps
 {
+    [Custom("Author", version=1.0)]
     public class Startup
     {
         public Startup(IConfiguration configuration)

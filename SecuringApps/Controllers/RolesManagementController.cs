@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using SecuringApps.Data;
 using SecuringApps.Models;
 using System;
@@ -17,11 +18,13 @@ namespace SecuringApps.Controllers
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ILogger<RolesManagementController> _logger;
 
-        public RolesManagementController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+        public RolesManagementController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, ILogger<RolesManagementController> logger)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _logger = logger;
         }
 
         public IActionResult Index()
