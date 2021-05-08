@@ -14,6 +14,6 @@ namespace SecuringApps.Services
         IQueryable<FileModel> GetAllFiles();
         //IQueryable<FileModel> GetAllFiles();
 
-        void Add(FileModel files);
+        void Add(FileModel files, string userId, string userEmail, string fileName, string path, string taskId);
     }
 }

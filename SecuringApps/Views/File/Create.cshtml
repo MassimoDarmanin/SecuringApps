@@ -11,7 +11,17 @@
         <form asp-action="Create" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
 
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+
+                <label for="fileInput" class="control-label">Select File:</label>
+                <input id="fileInput" type="file" name="fileParam" class="form-control" />
+                <span name="fileParam" class="text-danger"></span>
+
+            </div>
+
+            <!--<div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="FileName" class="control-label"></label>
                 <input asp-for="FileName" class="form-control" />
@@ -20,9 +30,10 @@
             <div class="form-group">
                 <label asp-for="Attachment" class="control-label"></label>
                 <input asp-for="Attachment" class="form-control" />
-                <!--<input asp-for="Attachment" class="form-control" accept="image/*" />-->
                 <span asp-validation-for="Attachment" class="text-danger"></span>
-            </div>
+            </div>-->
+
+
             <!--<div class="form-group">
                 <label asp-for="DateUploaded" class="control-label"></label>
                 <input asp-for="DateUploaded" class="form-control" />
@@ -53,10 +64,6 @@
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts{

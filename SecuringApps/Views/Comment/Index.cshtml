@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Comments on File</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" asp-route-id="@ViewBag.SelectedFile">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.CommentText)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FileId)
+                @Html.DisplayNameFor(model => model.UserEmail)
             </th>
             <th></th>
         </tr>
@@ -28,7 +28,7 @@
                 @Html.DisplayFor(modelItem => item.CommentText)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FileId)
+                @Html.DisplayFor(modelItem => item.UserEmail)
             </td>
             <td>
                 <!--<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

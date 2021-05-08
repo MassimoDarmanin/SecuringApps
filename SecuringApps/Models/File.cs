@@ -14,7 +14,7 @@ namespace SecuringApps.Models
         [Key]
         public Guid Id { get; set; }
 
-        [Required]
+        //[Required]
         [DisplayName("File Name")]
         public string FileName { get; set; }
 
@@ -25,7 +25,7 @@ namespace SecuringApps.Models
         public string FileType { get; set; }
         public string Extension { get; set; }
 
-        [Required]
+        //[Required]
         [NotMapped]
         [DisplayName("Upload File")]
         public IFormFile Attachment { get; set; }
@@ -39,7 +39,12 @@ namespace SecuringApps.Models
         public string TaskId { get; set; }
 
         [ForeignKey("AspNetUsers")]
-        [Required]
+        //[Required]
         public string UserId { get; set; }
+
+        public string UserEmail { get; set; }
+
+        public string Signature { get; set; }
+
     }
 }

@@ -11,6 +11,7 @@ namespace SecuringApps.Models
 {
     public class FileModel
     {
+
         public Guid Id { get; set; }
 
         public string FileName { get; set; }
@@ -35,5 +36,9 @@ namespace SecuringApps.Models
 
         //[Required]
         public string UserId { get; set; }
+
+        public string UserEmail { get; set; }
+
+        public string Signature { get; set; }
     }
 }

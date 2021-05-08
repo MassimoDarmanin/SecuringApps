@@ -15,9 +15,11 @@ namespace SecuringApps.Models
 
         //FK
         public virtual FileModel Files { get; set; }
-        public virtual Guid FileId { get; set; }        
+        public string FileId { get; set; }        
         
 
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
+
+        public string UserEmail { get; set; }
     }
 }

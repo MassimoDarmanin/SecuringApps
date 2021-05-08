@@ -12,6 +12,6 @@ namespace SecuringApps.Services
 
         IQueryable<CommentModel> GetAllComments();
 
-        void AddComment(CommentModel comment, string userId);
+        void AddComment(CommentModel comment, string userId, string userEmail, string FileId);
     }
 }

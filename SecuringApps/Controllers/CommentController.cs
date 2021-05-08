@@ -6,6 +6,7 @@ using SecuringApps.ActionFilters;
 using SecuringApps.Data;
 using SecuringApps.Models;
 using SecuringApps.Services;
+using SecuringApps.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,15 +32,20 @@ namespace SecuringApps.Controllers
         public string Message { get; set; }
 
         [SampleActionFilter]
-        public IActionResult Index(Guid id)
+        public IActionResult Index(string id)
         {
             string userName = _userManager.GetUserName(User);
 
             Message = "User: " + userName + $"\nFile Index visited at {DateTime.UtcNow.ToLongTimeString()}";
             _logger.LogInformation(Message);
 
+            string idDecrypted = Encryption.SymmetricDecrypt(id);
+            Guid guid = new Guid(idDecrypted);
+
+            ViewBag.SelectedFile = idDecrypted;
+
             var list = _commentServices.GetAllComments();
-            var listIndex = list.Where(f => f.FileId == id);
+            var listIndex = list.Where(f => f.FileId == idDecrypted);
             //IQueryable<FileModel> fileList = _db.Files.Where(f => f.TaskId == guid);
             //return View(fileList);
             return View(listIndex);
@@ -57,9 +63,11 @@ namespace SecuringApps.Controllers
         //Post-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(CommentModel cmt)
+        public IActionResult Create(string id, CommentModel cmt)
         {
             string userId = _userManager.GetUserId(User);
+            string userEmail = _userManager.GetUserName(User);
+            string fileId = id;
             try
             {
                 //_taskServices.Add(task, Guid.Parse(userId));
@@ -69,9 +77,9 @@ namespace SecuringApps.Controllers
                     //task.UserId = Guid.Parse(userId);
                     //_db.SaveChanges();
 
-                    _commentServices.AddComment(cmt, userId);
+                    _commentServices.AddComment(cmt, userId, userEmail, fileId);
 
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Index", "Task");
                 }
                 return View(cmt);
             }

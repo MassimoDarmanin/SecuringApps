@@ -28,7 +28,7 @@ namespace SecuringApps.Services
                 Title = tasks.Title,
                 Description = tasks.Description,
                 Deadline = tasks.Deadline,
-                UserId = Guid.Parse(userId),
+                UserId = Guid.Parse(userId)
             };
 
             taskRepo.AddTask(newTask);

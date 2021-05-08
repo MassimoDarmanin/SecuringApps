@@ -16,15 +16,17 @@ namespace SecuringApps.Services
             commentRepo = commentRepository;
         }
 
-        public void AddComment(CommentModel comment, string userId)
+        public void AddComment(CommentModel comment, string userId, string userEmail, string fileId)
         {
             Guid obj = Guid.NewGuid();
             //converting to productviewmodel to product
             Comment newComment = new Comment()
             {
+                Id = obj,
                 CommentText = comment.CommentText,
-                UserId = obj,
-                FileId = comment.FileId
+                UserId = userId,
+                FileId = fileId,
+                UserEmail = userEmail
             };
 
             commentRepo.AddComment(newComment);
@@ -38,7 +40,8 @@ namespace SecuringApps.Services
                            Id = c.Id,
                            CommentText = c.CommentText,
                            FileId = c.FileId,
-                           UserId = c.UserId
+                           UserId = c.UserId,
+                           UserEmail = c.UserEmail
                        };
             return list;
         }
@@ -50,12 +53,9 @@ namespace SecuringApps.Services
 
             model.CommentText = myComment.CommentText;
             model.UserId = myComment.UserId;
+            model.FileId = myComment.FileId;
+            model.UserEmail = myComment.UserEmail;
 
-            model.Files = new FileModel()
-            {
-                Id = model.Files.Id,
-                FileName = model.Files.FileName
-            };
             return model;
         }
     }

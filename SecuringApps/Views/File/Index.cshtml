@@ -4,59 +4,36 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Files</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" asp-route-id="@ViewBag.SelectedTask">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FileName)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.DateUploaded)
             </th>
-            <!--<th>
-                @Html.DisplayNameFor(model => model.FileType)
-            </th>
             <th>
-                @Html.DisplayNameFor(model => model.Extension)
+                @Html.DisplayNameFor(model => model.UserEmail)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TaskId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th> -->
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FileName)
-            </td>
+
             <td>
                 @Html.DisplayFor(modelItem => item.DateUploaded)
             </td>
-            <!--<td>
-                @Html.DisplayFor(modelItem => item.FileType)
-            </td>
+            <th>
+                @Html.DisplayNameFor(modelItem => item.UserEmail)
+            </th>
             <td>
-                @Html.DisplayFor(modelItem => item.Extension)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TaskId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td> -->
-            <td>
-                <a asp-controller="Comment" asp-action="Index" asp-route-id="@item.Id">Comment</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Download</a>
+                <a asp-controller="Comment" asp-action="Index" asp-route-id="@SecuringApps.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())">Comment</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Download</a>           
                 
             </td>
         </tr>

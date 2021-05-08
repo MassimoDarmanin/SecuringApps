@@ -19,12 +19,15 @@ namespace SecuringApps.Models
         public virtual FileModel Files { get; set; }
 
         //[Required]
-        [ForeignKey("Id")]
-        public virtual Guid FileId { get; set; }
+        //[ForeignKey("Id")]
+        public string FileId { get; set; }
 
 
         [ForeignKey("AspNetUsers")]
         [Required]
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
+
+        [Required]
+        public string UserEmail { get; set; }
     }
 }

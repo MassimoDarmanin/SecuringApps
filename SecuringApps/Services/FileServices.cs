@@ -23,11 +23,13 @@ namespace SecuringApps.Services
 
             model.FileName = myFile.FileName;
             model.DateUploaded = myFile.DateUploaded;
-            model.FileType = myFile.FileType;
+            //model.FileType = myFile.FileType;
             model.Extension = myFile.Extension;
             model.UserId = myFile.UserId;
             model.Attachment = myFile.Attachment;
-            model.TaskId = myFile.TaskId;
+            //model.TaskId = myFile.TaskId;
+            model.UserEmail = myFile.UserEmail;
+            //model.Signature = myFile.Signature;
 
             /*model.Tasks = new TaskModel()
             {
@@ -38,20 +40,24 @@ namespace SecuringApps.Services
         }
         
 
-        public void Add(FileModel file)
+        public void Add(FileModel file, string userId, string userEmail, string fileName, string path, string taskId)
         {
-           
+            Guid obj = Guid.NewGuid();
+
             //converting to productviewmodel to product
             File newFile = new File()
             {
-                FileName = file.FileName,
+                Id = obj,
+                FileName = fileName,
                 DateUploaded = DateTime.Now,
                 FileType = file.FileType,
-                Extension = file.Extension,
+                Extension = path,
                 //Attachment = file.Attachment,
                 //TaskId = file.Tasks.Id,
-                TaskId = file.TaskId,
-                UserId = file.UserId
+                TaskId = taskId,
+                UserId = userId,
+                UserEmail = userEmail,
+                Signature = file.Signature
             };
 
             fileRepo.Add(newFile);
@@ -62,13 +68,15 @@ namespace SecuringApps.Services
             var list = from f in fileRepo.GetAllFiles()
                        select new FileModel()
                        {
-                            Id = f.Id,
-                            FileName = f.FileName,
-                            DateUploaded = f.DateUploaded,
-                            FileType = f.FileType,
-                            Extension = f.Extension,
-                            TaskId = f.TaskId,
-                            UserId = f.UserId
+                           Id = f.Id,
+                           FileName = f.FileName,
+                           DateUploaded = f.DateUploaded,
+                           FileType = f.FileType,
+                           Extension = f.Extension,
+                           TaskId = f.TaskId,
+                           UserId = f.UserId,
+                           UserEmail = f.UserEmail,
+                           Signature = f.Signature
                        };
             return list;
         }

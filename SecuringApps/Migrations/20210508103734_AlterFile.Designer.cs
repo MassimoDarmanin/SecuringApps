@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SecuringApps.Data;
 
 namespace SecuringApps.Migrations
 {
     [DbContext(typeof(SecuringAppDbContext))]
-    partial class SecuringAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210508103734_AlterFile")]
+    partial class AlterFile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,19 +32,14 @@ namespace SecuringApps.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FileId")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("FileId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("FilesId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("UserEmail")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -65,6 +62,7 @@ namespace SecuringApps.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FileName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FileType")
@@ -83,6 +81,7 @@ namespace SecuringApps.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

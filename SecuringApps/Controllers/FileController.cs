@@ -52,7 +52,10 @@ namespace SecuringApps.Controllers
             _logger.LogInformation(Message);
 
             string idDecrypted = Encryption.SymmetricDecrypt(id);
-            //Guid guid = new Guid(idDecrypted);
+            Guid guid = new Guid(idDecrypted);
+
+            //ViewData["SelectedTask"] = idDecrypted;
+            ViewBag.SelectedTask = idDecrypted;
 
             //var list = _fileServices.GetFile(guid);
             var list = _fileServices.GetAllFiles();
@@ -125,9 +128,12 @@ namespace SecuringApps.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(FileModel files, IFormFile fileParam)
+        public IActionResult Create(string id,FileModel files, IFormFile fileParam)
         {
             string userId = _userManager.GetUserId(User);
+            string userEmail = _userManager.GetUserName(User);
+            string taskId = id;
+
             Dictionary<string, List<byte[]>> whiteList = new Dictionary<string, List<byte[]>>();
 
             whiteList.Add(".pdf", new List<byte[]>());
@@ -135,11 +141,11 @@ namespace SecuringApps.Controllers
 
             try
             {
-                /*if(fileParam == null)
+                if(fileParam == null)
                 {
                     ModelState.AddModelError("fileParam", "Please do not leave empty.");
                     return View("Error", new ErrorViewModel() { Message = "Please do not leave empty." });
-                }*/
+                }
 
                 if(fileParam.ContentType != "application/pdf")
                 {
@@ -199,9 +205,14 @@ namespace SecuringApps.Controllers
                     //HEX 2D = DEC 45
                     int byte5 = stream.ReadByte();*/
 
-                    if(buffer[0] == 37 && buffer[1] == 80 && buffer[2] == 68 && buffer[3] == 70 && buffer[4] == 45)
+                    string fileName = Guid.NewGuid() + Path.GetExtension(fileParam.FileName);
+
+                    string path = _hostEnvironment.WebRootPath + @"\Attachment\" + fileName;
+
+                    if (buffer[0] == 37 && buffer[1] == 80 && buffer[2] == 68 && buffer[3] == 70 && buffer[4] == 45)
                     {
-                        //pattern mathces to value = safe
+                        //pattern matches to value = safe
+                        _fileServices.Add(files, userId, userEmail, fileName, path, taskId);                        
                     }
                     else
                     {
@@ -212,9 +223,7 @@ namespace SecuringApps.Controllers
                     stream.Position = 0;
 
                     //unique name
-                    string fileName = Guid.NewGuid() + Path.GetExtension(fileParam.FileName);
 
-                    string path = _hostEnvironment.WebRootPath + @"\Attachment\" + fileName;
                     using (FileStream fs = new FileStream(path, FileMode.CreateNew, FileAccess.Write))
                     {
                         stream.CopyTo(fs);

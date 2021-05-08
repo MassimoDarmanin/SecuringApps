@@ -24,11 +24,14 @@ namespace SecuringApps.ActionFilters
                 //var fileIndex = allFiles.Where(f => f.Id == id);
                 var upload = fileServices.GetFile(id);
 
-                //if(upload.UserId)
+                if(upload.UserEmail.ToString() != currentUserId && !context.HttpContext.User.IsInRole("Teacher"))
+                {
+                    context.Result = new UnauthorizedObjectResult("Access Denied");
+                }
             }
             catch(Exception e)
             {
-                context.Result = new BadRequestObjectResult("");
+                context.Result = new BadRequestObjectResult("BadRequest");
             }
         }
 
