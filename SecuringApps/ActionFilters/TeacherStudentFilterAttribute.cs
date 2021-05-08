@@ -10,7 +10,7 @@ using System.Web;
 
 namespace SecuringApps.ActionFilters
 {
-    public class SampleActionFilterAttribute : ActionFilterAttribute
+    public class TeacherStudentFilterAttribute : ActionFilterAttribute
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {

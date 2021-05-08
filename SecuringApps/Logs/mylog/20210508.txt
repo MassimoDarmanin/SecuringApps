@@ -636,3 +636,129 @@ File Index visited at 15:57:17 (db29568d)
 File Index visited at 15:57:24 (868ba783)
 2021-05-08T17:57:59.6536600+02:00 8000005d-0002-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
 File Index visited at 15:57:59 (33e99eb0)
+2021-05-08T18:08:10.7019516+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T18:08:10.7140708+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T18:08:10.7172609+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T18:08:21.8824917+02:00 80000062-0001-fd00-b63f-84710c7967bb [WRN] Invalid password for user "4b46b683-561e-49df-934a-0261a44e5915". (c2dce6c7)
+2021-05-08T18:08:21.8890349+02:00 80000062-0001-fd00-b63f-84710c7967bb [WRN] User "4b46b683-561e-49df-934a-0261a44e5915" failed to provide the correct password. (ec8d2479)
+2021-05-08T18:09:10.5739509+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T18:09:10.5846569+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T18:09:10.5870253+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T18:09:17.7384889+02:00 80000055-0001-fa00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T18:09:33.6858435+02:00 80000056-0002-fd00-b63f-84710c7967bb [INF] User created a new account with password. (693a7015)
+2021-05-08T18:10:08.7327380+02:00 80000057-0001-fa00-b63f-84710c7967bb [INF] User logged in. (fdce0db4)
+2021-05-08T18:10:12.2536775+02:00 80000060-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+Task Index visited at 16:10:12 (161a0366)
+2021-05-08T18:10:14.1354365+02:00 80000062-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:10:14 (cd4435a3)
+2021-05-08T18:10:19.8051950+02:00 80000087-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:10:19 (4c3db390)
+2021-05-08T18:10:31.3324271+02:00 80000064-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+Task Index visited at 16:10:31 (1a4d1278)
+2021-05-08T18:10:34.2300526+02:00 80000066-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:10:34 (09ef3590)
+2021-05-08T18:10:36.2219803+02:00 80000068-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:10:36 (208b62c8)
+2021-05-08T18:10:38.0560335+02:00 8000008d-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:10:38 (3f199ff0)
+2021-05-08T18:10:40.8226406+02:00 8000006a-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:10:40 (b3168f90)
+2021-05-08T18:12:30.3287654+02:00 8000006c-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:12:30 (ab31e785)
+2021-05-08T20:31:06.0145735+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T20:31:06.0288488+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T20:31:06.0323566+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T20:32:58.6956480+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T20:32:58.7085071+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T20:32:58.7111696+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T20:33:04.1119337+02:00 8000006e-0002-fd00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T20:33:06.1324011+02:00 8000006e-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 18:33:06 (f2d35f34)
+2021-05-08T20:33:58.5556449+02:00 80000070-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 18:33:58 (8e00a3dc)
+2021-05-08T20:34:06.0227705+02:00 80000074-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 18:34:06 (1ff8ac26)
+2021-05-08T20:34:33.1407279+02:00 80000072-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 18:34:33 (c704fb60)
+2021-05-08T20:34:41.1976660+02:00 80000067-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 18:34:41 (d7b2e0e3)
+2021-05-08T20:34:47.5021644+02:00 80000076-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 18:34:47 (6be1e707)
+2021-05-08T20:34:49.7424610+02:00 8000007a-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 18:34:49 (e113f369)
+2021-05-08T20:46:22.8600909+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T20:46:22.8719922+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T20:46:22.8744056+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T20:46:28.8881953+02:00 8000007f-0001-fd00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T20:46:30.2535880+02:00 80000099-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 18:46:30 (5075ee72)
+2021-05-08T20:46:33.5744129+02:00 80000052-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 18:46:33 (66cc9949)
+2021-05-08T21:05:15.0635934+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T21:05:15.0936232+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T21:05:15.0999173+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T21:06:00.4331181+02:00 80000067-0002-ff00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T21:06:02.0000005+02:00 80000087-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:06:01 (ab84e318)
+2021-05-08T21:06:04.5544935+02:00 80000071-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:06:04 (12ef4347)
+2021-05-08T21:06:08.7745731+02:00 80000069-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:06:08 (ebc5f4f5)
+2021-05-08T21:06:11.5491344+02:00 80000073-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:06:11 (969fb82e)
+2021-05-08T21:06:13.1961290+02:00 8000006b-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:06:13 (ee7a7952)
+2021-05-08T21:06:15.8806803+02:00 80000075-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:06:15 (b5c487cb)
+2021-05-08T21:06:17.2747668+02:00 80000077-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:06:17 (1a1f3f47)
+2021-05-08T21:06:18.5871538+02:00 80000079-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:06:18 (a64568cd)
+2021-05-08T21:08:04.5536839+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T21:08:04.5705382+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T21:08:04.5740465+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T21:08:17.7221248+02:00 8000008f-0001-fd00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T21:08:19.3598439+02:00 8000009e-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:08:19 (f94215da)
+2021-05-08T21:08:21.1732150+02:00 80000093-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:08:21 (3122bcee)
+2021-05-08T21:08:24.1107319+02:00 80000097-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:08:24 (264da748)
+2021-05-08T21:08:25.5213252+02:00 8000005a-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:08:25 (242dd1dd)
+2021-05-08T21:08:26.6722988+02:00 80000099-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:08:26 (4ed47855)
+2021-05-08T21:08:27.8640131+02:00 8000009b-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:08:27 (c5ac1517)
+2021-05-08T21:09:37.9553406+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T21:09:37.9689100+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T21:09:37.9713975+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T21:09:43.5325964+02:00 800000a2-0000-fc00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T21:09:44.9442873+02:00 80000064-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:09:44 (07437263)
+2021-05-08T21:09:46.5942331+02:00 80000066-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:09:46 (83535d04)
+2021-05-08T21:10:14.8307460+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T21:10:14.8433013+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T21:10:14.8464627+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T21:10:27.4094346+02:00 800000a3-0001-fd00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T21:10:28.8978199+02:00 80000070-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:10:28 (4b3b91c1)
+2021-05-08T21:10:30.3386592+02:00 800000a7-0001-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:10:30 (7358ba13)
+2021-05-08T21:11:02.0607728+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-08T21:11:02.0746498+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-08T21:11:02.0780746+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-08T21:11:07.4024284+02:00 800000ac-0000-fc00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-08T21:11:08.8876870+02:00 8000002e-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:11:08 (7fab0835)
+2021-05-08T21:11:10.5947789+02:00 800000ae-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:11:10 (b27b0a0a)
+2021-05-08T21:11:37.0812861+02:00 800000b2-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:11:37 (8c4e92c4)
+2021-05-08T21:11:41.5052779+02:00 80000030-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:11:41 (70d192ec)
+2021-05-08T21:11:44.4558820+02:00 800000b4-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 19:11:44 (e6054758)
+2021-05-08T21:11:46.0488048+02:00 800000b6-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 19:11:46 (b42a19d0)

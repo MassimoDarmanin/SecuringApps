@@ -33,7 +33,7 @@
             </th>
             <td>
                 <a asp-controller="Comment" asp-action="Index" asp-route-id="@SecuringApps.Utility.Encryption.SymmetricEncrypt(item.Id.ToString())">Comment</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Download</a>           
+                <a asp-action="Download" asp-route-id="@item.Id">Download</a>           
                 
             </td>
         </tr>

@@ -128,6 +128,7 @@ namespace SecuringApps.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [DeadlineFilter]
         public IActionResult Create(string id,FileModel files, IFormFile fileParam)
         {
             string userId = _userManager.GetUserId(User);
@@ -236,6 +237,16 @@ namespace SecuringApps.Controllers
             {
                 return View("Error", new ErrorViewModel() { Message = "Error while saving File." });
             }
+        }
+
+        public IActionResult Download(string id, FileModel files, IFormFile fileParam)
+        {
+            var net = new System.Net.WebClient();
+            var data = net.DownloadData(files.Extension);
+            var content = new System.IO.MemoryStream(data);
+            var contentType = "APPLICATION/pdf";
+            var fileName = "File.pdf";
+            return File(content, contentType, fileName);
         }
     }
 }

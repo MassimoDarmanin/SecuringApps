@@ -31,7 +31,7 @@ namespace SecuringApps.Controllers
 
         public string Message { get; set; }
 
-        [SampleActionFilter]
+        [TeacherStudentFilter]
         public IActionResult Index(string id)
         {
             string userName = _userManager.GetUserName(User);

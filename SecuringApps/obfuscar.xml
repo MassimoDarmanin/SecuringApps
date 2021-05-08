@@ -1,0 +1,6 @@
+﻿<?xml version='1.0'?>
+<Obfuscator>
+  <Var name="InPath" value=".\bin\Debug\netcoreapp3.1" />
+  <Var name="OutPath" value=".\bin\Debug\netcoreapp3.1\Obfuscar_Output" />
+  <Module file="$(InPath)\Solution1.sln" />
+</Obfuscator>
