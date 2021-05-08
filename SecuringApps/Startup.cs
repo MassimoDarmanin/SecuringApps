@@ -10,6 +10,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SecuringApps.ActionFilters;
 using SecuringApps.Data;
+using SecuringApps.IOC;
+using SecuringApps.Repository;
+using SecuringApps.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +44,10 @@ namespace SecuringApps
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
+
+            //services.AddScoped<ITaskServices, TaskService>();
+            //services.AddScoped<IFileServices, FileServices>();
+            //services.AddScoped<ICommentServices, CommentServices>();
             //ApplicationUser
             /*services.AddDefaultIdentity<ApplicationUser>(options => {
                 options.SignIn.RequireConfirmedAccount = true;
@@ -63,6 +70,9 @@ namespace SecuringApps
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireDigit = false;
+
+                //Mitigation Strat
+                options.Lockout.MaxFailedAccessAttempts = 4;
             });
             //Google
             services.AddAuthentication()
@@ -77,6 +87,8 @@ namespace SecuringApps
             ////
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            DependencyContainer.RegisterServices(services, Configuration.GetConnectionString("DefaultConnection"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

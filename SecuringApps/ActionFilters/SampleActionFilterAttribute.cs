@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using SecuringApps.Services;
 using SecuringApps.Utility;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,15 @@ namespace SecuringApps.ActionFilters
         {
             try
             {
-                
+                var id = new Guid(Encryption.SymmetricDecrypt(HttpUtility.UrlDecode(context.ActionArguments["id"].ToString())));
+                string currentUserId = context.HttpContext.User.Identity.Name;
+
+                IFileServices fileServices = (IFileServices)context.HttpContext.RequestServices.GetService(typeof(IFileServices));
+                //var allFiles = fileServices.GetAllFiles();
+                //var fileIndex = allFiles.Where(f => f.Id == id);
+                var upload = fileServices.GetFile(id);
+
+                //if(upload.UserId)
             }
             catch(Exception e)
             {

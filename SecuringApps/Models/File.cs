@@ -9,31 +9,37 @@ using System.Threading.Tasks;
 
 namespace SecuringApps.Models
 {
-    public class FileModel
+    public class File
     {
+        [Key]
         public Guid Id { get; set; }
 
+        [Required]
+        [DisplayName("File Name")]
         public string FileName { get; set; }
 
-
+        //[Required]
+        [DisplayName("Upload Date")]
         public DateTime? DateUploaded { get; set; }
 
         public string FileType { get; set; }
         public string Extension { get; set; }
 
+        [Required]
         [NotMapped]
+        [DisplayName("Upload File")]
         public IFormFile Attachment { get; set; }
 
         //FK
         public virtual TaskModel Tasks { get; set; }
 
         //[Required]
-
-        //public virtual Guid TaskId { get; set; }
-
+        //[ForeignKey("Id")]
+        //public virtual string TaskId { get; set; }
         public string TaskId { get; set; }
 
-        //[Required]
+        [ForeignKey("AspNetUsers")]
+        [Required]
         public string UserId { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using SecuringApps.ActionFilters;
 using SecuringApps.Data;
 using SecuringApps.Models;
+using SecuringApps.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +16,14 @@ namespace SecuringApps.Controllers
     [Authorize]
     public class CommentController : Controller
     {
-        private readonly SecuringAppDbContext _db;
+        //private readonly SecuringAppDbContext _db;
+        private readonly ICommentServices _commentServices;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<CommentController> _logger;
 
-        public CommentController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager, ILogger<CommentController> logger)
+        public CommentController(ICommentServices commentServices, UserManager<ApplicationUser> userManager, ILogger<CommentController> logger)
         {
-            _db = db;
+            _commentServices = commentServices;
             _userManager = userManager;
             _logger = logger;
         }
@@ -36,8 +38,14 @@ namespace SecuringApps.Controllers
             Message = "User: " + userName + $"\nFile Index visited at {DateTime.UtcNow.ToLongTimeString()}";
             _logger.LogInformation(Message);
 
-            IEnumerable<CommentModel> cmtList = _db.Comments.Where(c => c.FileId == id);
-            return View(cmtList);
+            var list = _commentServices.GetAllComments();
+            var listIndex = list.Where(f => f.FileId == id);
+            //IQueryable<FileModel> fileList = _db.Files.Where(f => f.TaskId == guid);
+            //return View(fileList);
+            return View(listIndex);
+
+            //IEnumerable<CommentModel> cmtList = _db.Comments.Where(c => c.FileId == id);
+            //return View(cmtList);           
         }
 
         //GET-Create
@@ -51,14 +59,26 @@ namespace SecuringApps.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(CommentModel cmt)
         {
-            if (ModelState.IsValid)
+            string userId = _userManager.GetUserId(User);
+            try
             {
-                _db.Comments.Add(cmt);
-                _db.SaveChanges();
+                //_taskServices.Add(task, Guid.Parse(userId));
+                if (ModelState.IsValid)
+                {
+                    //_db.Tasks.Add(task);
+                    //task.UserId = Guid.Parse(userId);
+                    //_db.SaveChanges();
 
-                return RedirectToAction("Index");
+                    _commentServices.AddComment(cmt, userId);
+
+                    return RedirectToAction("Index");
+                }
+                return View(cmt);
             }
-            return View(cmt);
+            catch (Exception ex)
+            {
+                return View("Error", new ErrorViewModel() { Message = "Error while posting comment." });
+            }
         }
     }
 }

@@ -9,22 +9,15 @@ namespace SecuringApps.Models
 {
     public class CommentModel
     {
-        [Key]
         public Guid Id { get; set; }
 
-        [Required]
-        public string Comment { get; set; }
+        public string CommentText { get; set; }
 
         //FK
         public virtual FileModel Files { get; set; }
-
-        //[Required]
-        [ForeignKey("Id")]
         public virtual Guid FileId { get; set; }        
         
 
-        /*[ForeignKey("AspNetUsers")]
-        [Required]
-        public Guid UserId { get; set; }*/
+        public Guid UserId { get; set; }
     }
 }

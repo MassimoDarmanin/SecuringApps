@@ -7,17 +7,24 @@ using System.Threading.Tasks;
 
 namespace SecuringApps.Models
 {
-    public class TaskModel
+    public class Comment
     {
-
+        [Key]
         public Guid Id { get; set; }
 
-        public string Title { get; set; }
+        [Required]
+        public string CommentText { get; set; }
 
-        public string Description { get; set; }
+        //FK
+        public virtual FileModel Files { get; set; }
 
-        public DateTime Deadline { get; set; }
+        //[Required]
+        [ForeignKey("Id")]
+        public virtual Guid FileId { get; set; }
 
+
+        [ForeignKey("AspNetUsers")]
+        [Required]
         public Guid UserId { get; set; }
     }
 }

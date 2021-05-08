@@ -14,17 +14,27 @@ namespace SecuringApps.Data
 
         }
 
-        public DbSet<TaskModel> Tasks { get; set; }
-        public DbSet<FileModel> Files { get; set; }
-        public DbSet<CommentModel> Comments { get; set; }
+        public DbSet<Tasked> Taskeds { get; set; }
+        public DbSet<File> Files { get; set; }
+        public DbSet<Comment> Comments { get; set; }        
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<FileModel>(entity =>
-            {
-                entity.Property(x => x.DateUploaded).HasColumnType("datetime");
-            });
-            OnModelCreatingPartial(modelBuilder);
-        }*/
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Tasked>().Property(x => x.Id).HasDefaultValueSql("NEWID()");
+
+            modelBuilder.Entity<File>().Property(x => x.Id).HasDefaultValueSql("NEWID()");
+
+            modelBuilder.Entity<Comment>().Property(x => x.Id).HasDefaultValueSql("NEWID()");
+
+            //for the property ID of the product, it should have a default value by a default function called NEWID
+            //Generatres a new GUID
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+        }
     }
 }

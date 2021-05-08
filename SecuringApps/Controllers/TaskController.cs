@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SecuringApps.Data;
 using SecuringApps.Models;
+using SecuringApps.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,15 +16,19 @@ namespace SecuringApps.Controllers
     [Authorize]
     public class TaskController : Controller
     {
-        private readonly SecuringAppDbContext _db;
+        //private readonly SecuringAppDbContext _db;
+        private readonly ITaskServices _taskServices;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<TaskController> _logger;
+        private IWebHostEnvironment _env;
 
-        public TaskController(SecuringAppDbContext db, UserManager<ApplicationUser> userManager, ILogger<TaskController> logger)
+        public TaskController(ITaskServices taskServices, IWebHostEnvironment env, UserManager<ApplicationUser> userManager, ILogger<TaskController> logger)
         {
-            _db = db;
+            //_db = db;
             _userManager = userManager;
             _logger = logger;
+            _taskServices = taskServices;
+            _env = env;
         }
 
         public string Message { get; set; }
@@ -33,8 +39,11 @@ namespace SecuringApps.Controllers
             Message = "User: " + userName + $"\nTask Index visited at {DateTime.UtcNow.ToLongTimeString()}";
             _logger.LogInformation(Message);
 
-            IEnumerable<TaskModel> taskList = _db.Tasks;
-            return View(taskList);
+            var list = _taskServices.GetAllFiles();
+            return View(list);
+            //IEnumerable<TaskModel> taskList = _db.Tasks;
+            //return View(taskList);
+            //return View();
         }
 
         [Authorize(Roles = "Teacher")]
@@ -52,15 +61,18 @@ namespace SecuringApps.Controllers
             string userId = _userManager.GetUserId(User);
             try
             {
+                //_taskServices.Add(task, Guid.Parse(userId));
                 if (ModelState.IsValid)
                 {
-                    _db.Tasks.Add(task);
-                    task.UserId = Guid.Parse(userId);
-                    _db.SaveChanges();
+                    //_db.Tasks.Add(task);
+                    //task.UserId = Guid.Parse(userId);
+                    //_db.SaveChanges();
+
+                    _taskServices.Add(task,userId);
 
                     return RedirectToAction("Index");
                 }
-                return View(task); 
+                return View(task);
             }
             catch (Exception ex)
             {

@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Comment)
+                @Html.DisplayNameFor(model => model.CommentText)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FileId)
@@ -25,7 +25,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Comment)
+                @Html.DisplayFor(modelItem => item.CommentText)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FileId)

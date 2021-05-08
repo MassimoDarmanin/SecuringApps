@@ -1,0 +1,162 @@
+2021-05-06T17:28:37.8986487+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T17:28:37.9250156+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T17:28:37.9269018+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T17:28:45.3156707+02:00 80000004-0001-ff00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-06T17:28:55.1965053+02:00 80000008-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:28:55 (66f4b433)
+2021-05-06T17:29:01.4078374+02:00 80000008-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:01 (5c4fe887)
+2021-05-06T17:29:10.9940983+02:00 80000008-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:10 (db66cfa6)
+2021-05-06T17:29:14.0945124+02:00 8000000a-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:14 (db7a6a52)
+2021-05-06T17:29:19.2190284+02:00 80000006-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:19 (ff7717ce)
+2021-05-06T17:29:21.8546653+02:00 80000008-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:21 (787222f7)
+2021-05-06T17:29:23.6559109+02:00 8000000a-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:23 (d909ca04)
+2021-05-06T17:29:24.9444712+02:00 8000000c-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:24 (4677bf03)
+2021-05-06T17:29:26.6110142+02:00 8000000c-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:26 (59e14bb9)
+2021-05-06T17:29:27.5076423+02:00 8000000c-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:27 (a7438099)
+2021-05-06T17:29:28.7944089+02:00 8000000e-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:28 (b275fcdd)
+2021-05-06T17:29:31.2314425+02:00 80000010-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:31 (5312dbc5)
+2021-05-06T17:29:37.9445412+02:00 80000012-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:37 (759c140e)
+2021-05-06T17:29:39.2996700+02:00 80000014-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:39 (68dd8756)
+2021-05-06T17:29:44.7417066+02:00 80000010-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:44 (1949d524)
+2021-05-06T17:29:47.5694704+02:00 80000010-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:29:47 (b51d9230)
+2021-05-06T17:29:49.0519324+02:00 80000014-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:29:49 (508ec3b5)
+2021-05-06T18:06:24.4409547+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:06:24.4625573+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:06:24.4686820+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:06:28.8390169+02:00 80000016-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:06:28 (29f2243c)
+2021-05-06T18:06:30.7012397+02:00 80000018-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:06:30 (18fc0ab4)
+2021-05-06T18:07:56.2072713+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:07:56.2231077+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:07:56.2370425+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:08:01.5611595+02:00 80000007-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:08:01 (4843bbc7)
+2021-05-06T18:08:05.0155776+02:00 80000004-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:08:05 (f49caa83)
+2021-05-06T18:08:19.9607124+02:00 80000004-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:08:19 (7a88b571)
+2021-05-06T18:08:47.7084447+02:00 8000000b-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:08:47 (eec2846e)
+2021-05-06T18:11:08.4496121+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:11:08.4651081+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:11:08.4680641+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:13:10.7176405+02:00 80000008-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:13:10 (ca4375fe)
+2021-05-06T18:13:10.8373729+02:00 80000004-0000-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_RolesManagement_Index.<ExecuteAsync>b__11_0() in C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps\Views\RolesManagement\Index.cshtml:line 24
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_RolesManagement_Index.ExecuteAsync() in C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps\Views\RolesManagement\Index.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-05-06T18:13:16.9165103+02:00 80000006-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:13:16 (a9ab92cb)
+2021-05-06T18:17:43.8598014+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:17:43.8732170+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:17:43.8772934+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:17:46.3478006+02:00 8000001f-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:17:46 (38fe7f00)
+2021-05-06T18:17:49.4852067+02:00 80000021-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:17:49 (da37789e)
+2021-05-06T18:17:56.8907069+02:00 80000025-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:17:56 (50db2775)
+2021-05-06T18:17:58.2410755+02:00 80000027-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:17:58 (c97055b8)
+2021-05-06T18:20:43.1464360+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:20:43.1574628+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:20:43.1745467+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:20:48.5408371+02:00 8000002b-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:20:48 (b69e64f9)
+2021-05-06T18:20:52.7815046+02:00 8000002d-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:20:52 (189cbb6b)
+2021-05-06T18:21:54.3304876+02:00 80000031-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:21:54 (fa5f069f)
+2021-05-06T18:23:17.8040232+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:23:17.8231814+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:23:17.8318786+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:23:19.8128105+02:00 80000011-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:23:19 (885ad4ba)
+2021-05-06T18:23:22.2019723+02:00 8000001a-0001-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:23:22 (bc4776e8)
+2021-05-06T18:34:16.7548021+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:34:16.7659765+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:34:16.7678563+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:34:18.5950547+02:00 80000018-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:34:18 (cfb3dfef)
+2021-05-06T18:34:21.9847276+02:00 8000001a-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:34:21 (7000217a)
+2021-05-06T18:35:51.5630944+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:35:51.5734551+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:35:51.5873739+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:35:53.5859620+02:00 8000000b-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:35:53 (6962baea)
+2021-05-06T18:35:56.9347590+02:00 8000000f-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:35:56 (9a739a38)
+2021-05-06T18:37:56.2374740+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:37:56.2607015+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:37:56.2630932+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:38:00.7209162+02:00 8000000e-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:38:00 (df68472c)
+2021-05-06T18:38:02.2059074+02:00 80000010-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:38:02 (0c089af5)
+2021-05-06T18:43:07.2150037+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:43:07.2284701+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:43:07.2309580+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:43:09.5483475+02:00 80000015-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:43:09 (4fe10171)
+2021-05-06T18:43:12.5233202+02:00 80000012-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:43:12 (85010d75)
+2021-05-06T18:44:33.2760167+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-06T18:44:33.2892426+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-06T18:44:33.2926801+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-06T18:44:36.1507115+02:00 80000014-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:44:36 (11066c67)
+2021-05-06T18:44:38.7227149+02:00 80000016-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:44:38 (23eb0d6a)
+2021-05-06T18:45:09.6391289+02:00 80000016-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:45:09 (742cab18)
+2021-05-06T18:45:13.7788258+02:00 80000018-0000-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:45:13 (1d301148)
