@@ -43,7 +43,7 @@ namespace SecuringApps.Controllers
             return View(fileList);
         }*/
 
-        //[SampleActionFilter]
+        
         public IActionResult Index(string id)
         {
             string userName = _userManager.GetUserName(User);            
@@ -177,7 +177,7 @@ namespace SecuringApps.Controllers
 
                     stream.Read(buffer, 0, buffer.Length);
 
-                    List<byte[]> whiteListBuffers = whiteList[Path.GetExtension(fileParam.FileName)];
+                    List<byte[]> whiteListBuffers = whiteList[Path.GetExtension(fileParam.FileName)];                    
 
                     foreach (byte[] whiteListBuffer in whiteListBuffers)
                     {
@@ -231,6 +231,10 @@ namespace SecuringApps.Controllers
                     }
                 }
 
+                string userName = _userManager.GetUserName(User);
+                Message = "User: " + userName + $"\n Uploaded file at {DateTime.UtcNow.ToLongTimeString()}";
+                _logger.LogInformation(Message);
+
                 return RedirectToAction("Index", "Task");
             }
             catch (Exception ex)
@@ -239,10 +243,21 @@ namespace SecuringApps.Controllers
             }
         }
 
-        public IActionResult Download(string id, FileModel files, IFormFile fileParam)
+        [TeacherStudentFilter]
+        public IActionResult Download(string id)
         {
+            string userName = _userManager.GetUserName(User);
+
+            Message = "User: " + userName + $"\nFile Downloaded at {DateTime.UtcNow.ToLongTimeString()}";
+            _logger.LogInformation(Message);
+
+            string idDecrypted = Encryption.SymmetricDecrypt(id);
+            Guid guid = new Guid(idDecrypted);
+
+            var download = _fileServices.GetFile(guid);           
+
             var net = new System.Net.WebClient();
-            var data = net.DownloadData(files.Extension);
+            var data = net.DownloadData(download.Extension);
             var content = new System.IO.MemoryStream(data);
             var contentType = "APPLICATION/pdf";
             var fileName = "File.pdf";

@@ -36,7 +36,7 @@ namespace SecuringApps.Controllers
         {
             string userName = _userManager.GetUserName(User);
 
-            Message = "User: " + userName + $"\nFile Index visited at {DateTime.UtcNow.ToLongTimeString()}";
+            Message = "User: " + userName + $"\nComment Section visited at {DateTime.UtcNow.ToLongTimeString()}";
             _logger.LogInformation(Message);
 
             string idDecrypted = Encryption.SymmetricDecrypt(id);
@@ -63,6 +63,7 @@ namespace SecuringApps.Controllers
         //Post-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [TeacherStudentFilter]
         public IActionResult Create(string id, CommentModel cmt)
         {
             string userId = _userManager.GetUserId(User);
@@ -78,6 +79,9 @@ namespace SecuringApps.Controllers
                     //_db.SaveChanges();
 
                     _commentServices.AddComment(cmt, userId, userEmail, fileId);
+
+                    Message = "User: " + userEmail + $"\nleft a comment at {DateTime.UtcNow.ToLongTimeString()}";
+                    _logger.LogInformation(Message);
 
                     return RedirectToAction("Index", "Task");
                 }

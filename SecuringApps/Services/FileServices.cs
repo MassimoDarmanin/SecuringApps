@@ -21,15 +21,17 @@ namespace SecuringApps.Services
             var myFile = fileRepo.GetFile(id);
             FileModel model = new FileModel();
 
+            model.Id = myFile.Id;
             model.FileName = myFile.FileName;
             model.DateUploaded = myFile.DateUploaded;
-            //model.FileType = myFile.FileType;
+            model.FileType = myFile.FileType;
             model.Extension = myFile.Extension;
             model.UserId = myFile.UserId;
             model.Attachment = myFile.Attachment;
-            //model.TaskId = myFile.TaskId;
+            model.TaskId = myFile.TaskId;
             model.UserEmail = myFile.UserEmail;
-            //model.Signature = myFile.Signature;
+            model.Signature = myFile.Signature;
+            model.Tasks = myFile.Tasks;
 
             /*model.Tasks = new TaskModel()
             {
@@ -76,7 +78,9 @@ namespace SecuringApps.Services
                            TaskId = f.TaskId,
                            UserId = f.UserId,
                            UserEmail = f.UserEmail,
-                           Signature = f.Signature
+                           Signature = f.Signature,
+                           Tasks = f.Tasks,
+                           Attachment = f.Attachment
                        };
             return list;
         }

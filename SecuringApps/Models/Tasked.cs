@@ -21,7 +21,7 @@ namespace SecuringApps.Models
         public DateTime Deadline { get; set; }
 
         [ForeignKey("AspNetUsers")]
-        //[Required]
+        [Required]
         public Guid UserId { get; set; }
 
         //public bool Disable { get; set; } //refresh db - run commands

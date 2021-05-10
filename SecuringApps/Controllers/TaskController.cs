@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SecuringApps.ActionFilters;
 using SecuringApps.Data;
 using SecuringApps.Models;
 using SecuringApps.Services;
@@ -46,7 +47,7 @@ namespace SecuringApps.Controllers
             //return View();
         }
 
-        [Authorize(Roles = "Teacher")]
+        [Authorize(Roles = "Teacher")]        
         //GET-Create
         public IActionResult Create()
         {
@@ -56,9 +57,11 @@ namespace SecuringApps.Controllers
         //Post-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [TeacherStudentFilter]
         public IActionResult Create(TaskModel task)
         {
             string userId = _userManager.GetUserId(User);
+            string userName = _userManager.GetUserName(User);
             try
             {
                 //_taskServices.Add(task, Guid.Parse(userId));
@@ -69,6 +72,8 @@ namespace SecuringApps.Controllers
                     //_db.SaveChanges();
 
                     _taskServices.Add(task,userId);
+                    Message = "User: " + userName + $"\nTask created at {DateTime.UtcNow.ToLongTimeString()}";
+                    _logger.LogInformation(Message);
 
                     return RedirectToAction("Index");
                 }

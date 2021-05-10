@@ -23,6 +23,8 @@ namespace SecuringApps.Models
         public DateTime? DateUploaded { get; set; }
 
         public string FileType { get; set; }
+
+        [Required]
         public string Extension { get; set; }
 
         //[Required]
@@ -39,9 +41,10 @@ namespace SecuringApps.Models
         public string TaskId { get; set; }
 
         [ForeignKey("AspNetUsers")]
-        //[Required]
+        [Required]
         public string UserId { get; set; }
 
+        [Required]
         public string UserEmail { get; set; }
 
         public string Signature { get; set; }
