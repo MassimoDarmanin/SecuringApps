@@ -63,7 +63,7 @@ namespace SecuringApps.Controllers
         //Post-Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [TeacherStudentFilter]
+        //[TeacherStudentFilter]
         public IActionResult Create(string id, CommentModel cmt)
         {
             string userId = _userManager.GetUserId(User);

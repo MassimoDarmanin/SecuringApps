@@ -195,3 +195,276 @@
 2021-05-10T16:11:01.2552846+02:00  [INF] Hosting environment: "Development" (c3307c92)
 2021-05-10T16:11:01.3468301+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
 2021-05-10T16:12:42.2454527+02:00 8000006c-0000-fb00-b63f-84710c7967bb [INF] User logged in. (fdce0db4)
+2021-05-10T17:19:39.8770760+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-10T17:19:39.8872468+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-10T17:19:39.8898741+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-10T17:20:53.7913498+02:00 800000b7-0002-fd00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-10T17:21:38.1263941+02:00 800000bf-0002-fd00-b63f-84710c7967bb [WRN] Invalid password for user "8281daa2-add4-4e48-85ad-495f3b72f252". (c2dce6c7)
+2021-05-10T17:21:38.1295777+02:00 800000bf-0002-fd00-b63f-84710c7967bb [WRN] User "8281daa2-add4-4e48-85ad-495f3b72f252" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:21:42.7382754+02:00 8000008a-0000-fe00-b63f-84710c7967bb [WRN] Invalid password for user "8281daa2-add4-4e48-85ad-495f3b72f252". (c2dce6c7)
+2021-05-10T17:21:42.7412279+02:00 8000008a-0000-fe00-b63f-84710c7967bb [WRN] User "8281daa2-add4-4e48-85ad-495f3b72f252" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:21:44.5146275+02:00 800002fc-0001-fb00-b63f-84710c7967bb [WRN] Invalid password for user "8281daa2-add4-4e48-85ad-495f3b72f252". (c2dce6c7)
+2021-05-10T17:21:44.5173863+02:00 800002fc-0001-fb00-b63f-84710c7967bb [WRN] User "8281daa2-add4-4e48-85ad-495f3b72f252" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:21:46.5108505+02:00 8000008c-0000-fe00-b63f-84710c7967bb [WRN] Invalid password for user "8281daa2-add4-4e48-85ad-495f3b72f252". (c2dce6c7)
+2021-05-10T17:21:46.5200085+02:00 8000008c-0000-fe00-b63f-84710c7967bb [WRN] User "8281daa2-add4-4e48-85ad-495f3b72f252" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:21:46.5229588+02:00 8000008c-0000-fe00-b63f-84710c7967bb [WRN] User "8281daa2-add4-4e48-85ad-495f3b72f252" is locked out. (46565390)
+2021-05-10T17:21:46.5392396+02:00 8000008c-0000-fe00-b63f-84710c7967bb [WRN] User "8281daa2-add4-4e48-85ad-495f3b72f252" is currently locked out. (216dea9c)
+2021-05-10T17:21:46.5414886+02:00 8000008c-0000-fe00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:02.8831034+02:00 80000110-0001-ff00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:02.8877526+02:00 80000110-0001-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:02.9909733+02:00 80000301-0001-fb00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.0157751+02:00 80000301-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.0222896+02:00 800000c2-0002-fd00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.0294026+02:00 800000c2-0002-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.0353794+02:00 80000112-0001-ff00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.0558994+02:00 80000112-0001-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.1123095+02:00 80000084-0002-ff00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.1163284+02:00 80000084-0002-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.1981427+02:00 80000303-0001-fb00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.2014539+02:00 80000102-0001-fd00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.2044069+02:00 80000303-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.2063463+02:00 80000102-0001-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.2088601+02:00 80000303-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is locked out. (46565390)
+2021-05-10T17:25:03.2109481+02:00 80000102-0001-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is locked out. (46565390)
+2021-05-10T17:25:03.2431431+02:00 80000102-0001-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.2467867+02:00 80000086-0002-ff00-b63f-84710c7967bb [WRN] Invalid password for user "aba41db1-af4d-41a7-a594-70265ff048fe". (c2dce6c7)
+2021-05-10T17:25:03.2496692+02:00 80000102-0001-fd00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.2540576+02:00 800000c4-0002-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.2558186+02:00 80000086-0002-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" failed to provide the correct password. (ec8d2479)
+2021-05-10T17:25:03.2607448+02:00 80000086-0002-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is locked out. (46565390)
+2021-05-10T17:25:03.2650023+02:00 800000c4-0002-fd00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.2923008+02:00 80000086-0002-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.2976167+02:00 80000303-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.3059998+02:00 80000086-0002-ff00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.3064722+02:00 80000303-0001-fb00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.3333878+02:00 80000114-0001-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.3403187+02:00 80000114-0001-ff00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.3686053+02:00 800000c6-0002-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.3725328+02:00 800000c6-0002-fd00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.3977193+02:00 80000116-0001-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.4005642+02:00 80000116-0001-ff00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.4442081+02:00 80000305-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.4490730+02:00 80000305-0001-fb00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.5452374+02:00 800000c8-0002-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.5767140+02:00 800000c8-0002-fd00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.6151986+02:00 80000307-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.6281975+02:00 80000307-0001-fb00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.6526919+02:00 80000118-0001-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.6616670+02:00 80000118-0001-ff00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.7109230+02:00 800000ca-0002-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.7333077+02:00 800000ca-0002-fd00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.8026587+02:00 80000309-0001-fb00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.8333306+02:00 80000309-0001-fb00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.8382838+02:00 8000011a-0001-ff00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.8460632+02:00 8000011a-0001-ff00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:25:03.8833968+02:00 800000cc-0002-fd00-b63f-84710c7967bb [WRN] User "aba41db1-af4d-41a7-a594-70265ff048fe" is currently locked out. (216dea9c)
+2021-05-10T17:25:03.8910245+02:00 800000cc-0002-fd00-b63f-84710c7967bb [WRN] User account locked out. (fe5877a4)
+2021-05-10T17:26:27.8991005+02:00 80000006-0002-fb00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-10T17:26:35.6598067+02:00 800000a8-0001-fa00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 15:26:35 (084e5d10)
+2021-05-10T17:26:39.1226525+02:00 80000072-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 15:26:39 (0dc09899)
+2021-05-10T17:26:41.2344871+02:00 80000074-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 15:26:41 (68670862)
+2021-05-10T18:19:58.3653249+02:00 80000083-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:19:58 (bfbd83c8)
+2021-05-10T18:20:00.1482415+02:00 800000ce-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:20:00 (7e6a5709)
+2021-05-10T18:20:03.2558782+02:00 80000085-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:20:03 (6e66f158)
+2021-05-10T18:20:05.2427867+02:00 800000b5-0001-fa00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:20:05 (4bf4721e)
+2021-05-10T18:20:06.2305425+02:00 80000087-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:20:06 (1793c3b3)
+2021-05-10T18:20:15.6361181+02:00 80000089-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:20:15 (29f469d4)
+2021-05-10T18:20:16.6538860+02:00 8000008b-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:20:16 (2744646c)
+2021-05-10T18:20:17.5607551+02:00 800000d2-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:20:17 (b49476d8)
+2021-05-10T18:20:18.3042894+02:00 8000008f-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:20:18 (6e20c313)
+2021-05-10T18:20:24.9708146+02:00 800000bd-0001-fa00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-10T18:20:26.2975945+02:00 800000d8-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:20:26 (40806927)
+2021-05-10T18:20:28.1880894+02:00 80000093-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:20:28 (a7a7dbdf)
+2021-05-10T18:20:29.3232269+02:00 80000095-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:20:29 (4681acd2)
+2021-05-10T18:20:52.2010191+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-10T18:20:52.2114096+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-10T18:20:52.2154278+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-10T18:20:59.4004021+02:00 80000024-0001-fc00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-10T18:21:00.9865862+02:00 80000026-0001-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:21:00 (06495af7)
+2021-05-10T18:21:02.6610185+02:00 80000028-0001-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:21:02 (6dfb76c8)
+2021-05-10T18:21:05.4930872+02:00 8000002a-0001-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:21:05 (4dce6a04)
+2021-05-10T18:21:06.7082906+02:00 800000fd-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:21:06 (a50ae4e6)
+2021-05-10T18:21:08.1492679+02:00 8000002c-0001-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:21:08 (bc18712a)
+2021-05-10T18:21:14.5788190+02:00 80000261-0002-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:21:14 (027d25b1)
+2021-05-10T18:21:18.1413026+02:00 800000ff-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:21:18 (b37057ce)
+2021-05-10T18:22:08.4938232+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-05-10T18:22:08.5053813+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2021-05-10T18:22:08.5075991+02:00  [INF] Content root path: "C:\Users\MCAST\Desktop\MCAST\Securing Apps\CleanSolution_ForSecuringApps-master\SecuringApps" (b5d60022)
+2021-05-10T18:22:18.3878196+02:00 80000034-0001-fe00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-10T18:22:56.1848221+02:00 80000109-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:22:56 (d8b6101a)
+2021-05-10T18:22:57.9995021+02:00 800000dc-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:22:57 (8996bdd5)
+2021-05-10T18:23:02.6490044+02:00 800000e0-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:23:02 (442008d7)
+2021-05-10T18:23:03.1792032+02:00 80000036-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:23:03 (c6e94c2e)
+2021-05-10T18:23:04.8327127+02:00 800000e2-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:23:04 (60c04217)
+2021-05-10T18:23:06.4809874+02:00 800000e4-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:23:06 (1c3c3624)
+2021-05-10T18:23:08.9686107+02:00 800000e6-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:23:08 (1e0a3cac)
+2021-05-10T18:23:11.2029916+02:00 800000e8-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:23:11 (78b07037)
+2021-05-10T18:23:12.7563871+02:00 80000038-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:23:12 (2f65ccd6)
+2021-05-10T18:23:13.7398627+02:00 8000003a-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:23:13 (9d513978)
+2021-05-10T18:23:20.1102706+02:00 8000010b-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+left a comment at 16:23:20 (0e0bf6ea)
+2021-05-10T18:23:20.1193271+02:00 8000003c-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:23:20 (06cee020)
+2021-05-10T18:23:22.1121827+02:00 800000ec-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:23:22 (bc4776e8)
+2021-05-10T18:23:23.6690679+02:00 800000ee-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:23:23 (27ee4b48)
+2021-05-10T18:24:09.4064974+02:00 8000003e-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:24:09 (55b7e00d)
+2021-05-10T18:24:12.1600178+02:00 800000f0-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:24:12 (43ea915f)
+2021-05-10T18:24:12.8717677+02:00 8000010d-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:24:12 (733b6d8a)
+2021-05-10T18:24:30.3659498+02:00 800000f4-0002-fd00-b63f-84710c7967bb [INF] User logged in. (fdce0db4)
+2021-05-10T18:24:32.5427443+02:00 800000f6-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+Task Index visited at 16:24:32 (4b18b7ba)
+2021-05-10T18:24:34.6398688+02:00 80000048-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:24:34 (1323fd4e)
+2021-05-10T18:24:38.0004500+02:00 8000004a-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:24:37 (4f02752a)
+2021-05-10T18:24:39.4169104+02:00 8000004c-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+Comment Section visited at 16:24:39 (1a1b83b3)
+2021-05-10T18:24:43.9622620+02:00 8000010f-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+Comment Section visited at 16:24:43 (d1b81506)
+2021-05-10T18:24:44.4437605+02:00 80000111-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+File Index visited at 16:24:44 (15a487df)
+2021-05-10T18:24:45.5742708+02:00 80000113-0000-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@live.com
+Task Index visited at 16:24:45 (27ad7218)
+2021-05-10T18:25:58.0676075+02:00 80000117-0000-fc00-b63f-84710c7967bb [INF] "Massa Darmanin" logged in with "Google" provider. (107abac5)
+2021-05-10T18:25:59.3269007+02:00 80000100-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:25:59 (1180b944)
+2021-05-10T18:26:03.2950445+02:00 80000054-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:26:03 (75f91006)
+2021-05-10T18:26:05.7137782+02:00 80000102-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:26:05 (a81a2a18)
+2021-05-10T18:33:27.7768553+02:00 80000056-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+left a comment at 16:33:27 (1784d3f5)
+2021-05-10T18:33:27.8009200+02:00 8000010a-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:33:27 (e9b44a33)
+2021-05-10T18:33:29.3185134+02:00 80000058-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:33:29 (f8a56c8b)
+2021-05-10T18:33:31.6608774+02:00 8000005a-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:33:31 (a17f9e06)
+2021-05-10T18:33:33.3829927+02:00 8000009f-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:33:33 (d43fa2b4)
+2021-05-10T18:33:34.5225397+02:00 80000112-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:33:34 (c577e5f6)
+2021-05-10T18:33:53.4583114+02:00 8000005e-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+left a comment at 16:33:53 (777f1be8)
+2021-05-10T18:33:53.4707969+02:00 80000060-0001-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 16:33:53 (124e9cc7)
+2021-05-10T18:33:55.4305330+02:00 800000a7-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:33:55 (59e5b042)
+2021-05-10T18:33:57.0534289+02:00 80000032-0001-fc00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:33:57 (21d3067a)
+2021-05-10T18:33:58.1699102+02:00 8000011a-0002-fd00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:33:58 (826c814f)
+2021-05-10T18:33:59.4359761+02:00 800000ad-0000-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 16:33:59 (015fc594)
+2021-05-10T18:36:09.6319219+02:00 800000c2-0001-fa00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 16:36:09 (f74a27ff)
+2021-05-10T19:17:05.7892473+02:00 8000001e-0002-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 17:17:05 (b79a5169)
+2021-05-10T19:17:08.0871370+02:00 80000020-0002-fb00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 17:17:08 (9e031c1d)
+2021-05-10T19:21:02.8472683+02:00 80000093-0000-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+left a comment at 17:21:02 (52799f7c)
+2021-05-10T19:21:02.8555369+02:00 8000009a-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Task Index visited at 17:21:02 (0c902edd)
+2021-05-10T19:21:04.6566898+02:00 8000009c-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 17:21:04 (8b9186e7)
+2021-05-10T19:21:06.0953570+02:00 8000009e-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 17:21:06 (c433ccb7)
+2021-05-10T19:21:08.0751493+02:00 80000095-0000-fe00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+File Index visited at 17:21:08 (449578ec)
+2021-05-10T19:21:09.2537927+02:00 800000a0-0002-ff00-b63f-84710c7967bb [INF] User: massimodarmanin@gmail.com
+Comment Section visited at 17:21:09 (b60fb06f)
+2021-05-10T19:44:14.9716701+02:00 80000099-0000-fe00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("21"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Guid), @p4='?' (Size = 4000), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Comments] ([Id], [CommentText], [FileId], [FilesId], [UserEmail], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (627a98df)
+2021-05-10T19:44:15.0835461+02:00 80000099-0000-fe00-b63f-84710c7967bb [ERR] An exception occurred in the database while saving changes for context type '"SecuringApps.Data.SecuringAppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommentText', table 'SecurityAppDb.dbo.Comments'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:4e02c35c-7373-4bac-ac2c-60e6e19973c3
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommentText', table 'SecurityAppDb.dbo.Comments'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:4e02c35c-7373-4bac-ac2c-60e6e19973c3
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
